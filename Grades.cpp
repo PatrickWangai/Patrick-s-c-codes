@@ -1,6 +1,10 @@
-/* Name:Patrick Wangai
-   Admission Number:BSE-01-0052/2025
-   Description:Implementing grading system */
+/*
+Author:Patrick Wangai
+Reg No:BSE-01-0052/2025
+Description:Implementing grading system 
+Date: 22/05/2025
+version 1
+*/
 
 #include <iostream>
 #include <string>
