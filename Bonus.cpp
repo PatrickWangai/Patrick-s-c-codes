@@ -1,6 +1,11 @@
-/*Name:Patrick Wangai
-Admission Number:BSE-01-0052/2025
-Description:Determining bonus earned depending on salary and years of service*/
+/*
+Author:Patrick Wangai
+Reg No:BSE-01-0052/2025
+Description:Determining bonus earned depending on salary and years of service 
+Date: 22/05/2025
+version1
+*/
+
 #include <iostream>
 using namespace std;
 
