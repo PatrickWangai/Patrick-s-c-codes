@@ -1,3 +1,11 @@
+/*
+Author:Patrick Wangai
+Reg No:BSE-01-0052/2025
+Description:creating a simple Bank Management System 
+Date: 29/06/2025
+version1
+*/
+
 #include <iostream>
 using namespace std;
 
