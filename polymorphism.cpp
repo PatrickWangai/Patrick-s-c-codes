@@ -1,34 +1,46 @@
+/*
+Author:Patrick Wangai
+Reg No:BSE-01-0052/2025
+Description: Example of polymorphism
+Date: 15/07/2025
+version 1
+*/
 #include <iostream>
 #include <cmath>
 using namespace std;
- class Shape{
- 	public:
- 		int virtual area(){
-		 cout<<"area calculation not defined for generic shape"<<endl;
-		
-		 
-	 }
- 		
-	 
- };
-class Rectangle :public Shape {
-	 public:
-	 	int length;
-	 	int width;
-	 	
-	 	 int area(){
-			 cout<<"length * width"<<endl;
-		 }
- };
- 
- 
- class Circle :public Shape {
- 	public:
- 		 int radius;
- 		 int area(){
-			  cout<<"3.142 *radius *radius"<<endl;
-		  }
- 		
-	 
- };
+
+
+class Shape {
+public:
+    virtual void area() {
+        cout << "Area calculation not defined for generic shape" << endl;
+    }
+
+    
+    virtual ~Shape() {}
+};
+
+
+class Rectangle : public Shape {
+private:
+    int length;
+    int width;
+
+public:
+    Rectangle(int l, int w) {
+        length = l;
+        width = w;
+    }
+
+   
+    void area() override {
+        cout << "Rectangle Area = " << length * width << endl;
+    }
+};
+int main() {
+    Rectangle rect(7, 7);  
+    cout << "New area is: ";
+    rect.area();
+    return 0;
+}
  
